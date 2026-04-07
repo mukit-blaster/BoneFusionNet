@@ -1,0 +1,19 @@
+\begin{table*}[ht]
+\centering
+\caption{Ablation study results on the held-out test set (image-level, $n=241$ images, 41 malignant, 200 benign). Values are mean [95\% bootstrap CI] unless otherwise noted. Thresholds were optimised on the validation set under the clinical constraint (malignant recall $\geq 0.85$). Image features are 768-dimensional ConvNeXt-Tiny-SE embeddings projected to 128-dim via a learned two-stage MLP (768$\to$256$\to$128). FusionNet and Image-Only MLP produced identical binary decisions (TP=26, FP=11, TN=189, FN=15); AUC-PR differs because the clinical branch attenuates ranking separation without shifting decisions at the chosen threshold.}
+\label{tab:ablation}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lcccccccc}
+\hline
+\textbf{Model} & \textbf{AUC-ROC} & \textbf{AUC-PR} & \textbf{Bal.~Acc.} & \textbf{MCC} & \textbf{Sensitivity} & \textbf{Specificity} & \textbf{TP/FP/TN/FN} & \textbf{Thr.} \\
+\hline
+  Clinical LR \cite{stage2} & 0.552 [0.444--0.673] & 0.201 [0.135--0.278] & 0.500 [0.500--0.500] & -- & 0.000 [0.000--0.000] & 1.000 [1.000--1.000] & 0/0/200/41 & 0.500 \\
+  Image-Only MLP & 0.910 [0.862--0.955] & 0.738 [0.584--0.859] & 0.771 [0.694--0.838] & 0.560 [0.400--0.695] & 0.607 [0.458--0.741] & 0.935 [0.900--0.976] & 25/13/187/16 & 0.650 \\
+  Clinical-Only MLP & 0.583 [0.471--0.711] & 0.269 [0.158--0.375] & 0.518 [0.430--0.615] & 0.026 [-0.105--0.164] & 0.491 [0.318--0.684] & 0.545 [0.460--0.626] & 20/91/109/21 & 0.630 \\
+  \textbf{FusionNet (ours)} & 0.902 [0.851--0.947] & 0.756 [0.618--0.853] & 0.788 [0.710--0.859] & 0.602 [0.444--0.742] & 0.632 [0.476--0.769] & 0.945 [0.912--0.984] & 26/11/189/15 & 0.610 \\
+\hline
+\multicolumn{9}{l}{\textit{AUC: area under curve; PR: precision--recall; Bal.~Acc.: balanced accuracy; MCC: Matthews correlation coefficient.}} \\
+\multicolumn{9}{l}{\textit{CI: 95\% bootstrap confidence interval (patient-resampled, $N=2{,}000$).}} \\
+\end{tabular}
+}
+\end{table*}

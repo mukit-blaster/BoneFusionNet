@@ -1,0 +1,5 @@
+Model,auc_roc,auc_pr,brier,balanced_accuracy,macro_f1,mcc,malignant_recall,malignant_precision,specificity,benign_recall,benign_precision,tp,fp,tn,fn,pos_rate_pred,threshold,n_images,n_malignant,n_benign
+FusionNet (proposed),0.9028,0.7571,0.0899,0.7896,0.8012,0.6036,0.6341,0.7027,0.945,0.945,0.9265,26,11,189,15,0.1535,0.61,241,41,200
+Image-Only MLP,0.9106,0.7377,0.0906,0.7724,0.7805,0.5617,0.6098,0.6579,0.935,0.935,0.9212,25,13,187,16,0.1577,0.65,241,41,200
+Clinical-Only MLP,0.5809,0.2574,0.3253,0.5164,0.4619,0.0247,0.4878,0.1802,0.545,0.545,0.8385,20,91,109,21,0.4606,0.63,241,41,200
+Clinical LR (Stage 2 baseline),0.5507,0.1919,0.1625,0.5,0.4535,,0.0,0.0,1.0,1.0,0.8299,0,0,200,41,0.0,0.5,241,41,200

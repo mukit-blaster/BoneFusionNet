@@ -1,0 +1,25 @@
+{
+  "pr_auc": 0.9338335496019697,
+  "average_precision": 0.9339483712293255,
+  "optimal_threshold": 0.5154948830604553,
+  "best_f1_score": 0.859180035650624,
+  "optimal_precision": 0.8763636363636363,
+  "optimal_recall": 0.8426573426573427,
+  "dataset_stats": {
+    "total_images": 564,
+    "positive_images": 286,
+    "negative_images": 278
+  },
+  "score_statistics": {
+    "normal_images": {
+      "mean": 0.20474785946323384,
+      "median": 0.08546753972768784,
+      "std": 0.24659997832135908
+    },
+    "tumor_images": {
+      "mean": 0.7572403455127057,
+      "median": 0.8649251461029053,
+      "std": 0.24518910672375466
+    }
+  }
+}

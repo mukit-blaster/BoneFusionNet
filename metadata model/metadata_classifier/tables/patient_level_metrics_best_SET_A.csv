@@ -1,0 +1,3 @@
+split,n_patients,threshold_used(VAL),accuracy,balanced_accuracy,mcc,macro_f1,roc_auc,pr_auc,brier,malignant_recall,malignant_precision,benign_recall,tp,fp,tn,fn
+val,123,0.14,0.5285,0.6401,0.2134,0.4965,0.7227,0.4683,0.1265,0.8095,0.2394,0.4706,17,54,48,4
+test,119,0.14,0.5294,0.5539,0.0755,0.4587,0.6139,0.2117,0.122,0.5882,0.1695,0.5196,10,49,53,7

@@ -1,0 +1,4 @@
+Model,Best_AUC_PR,AUC_ROC,BalAcc,MCC,MalRecall,MalPrec,Threshold,Thr_Status,Best_Epoch,Epochs_Trained
+fusion,0.9841,0.9923,0.9783,0.9731,0.9565,1.0,0.5,OK,20,35
+image_only,0.9841,0.9937,0.9783,0.9731,0.9565,1.0,0.45,OK,17,34
+clinical_only,0.5658,0.814,0.7052,0.3229,0.8696,0.3077,0.62,OK,33,48

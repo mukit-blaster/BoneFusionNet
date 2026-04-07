@@ -1,0 +1,36 @@
+{
+  "condition": "with_aug",
+  "feat_dim": 768,
+  "normalisation": "StandardScaler (fit on train only)",
+  "note": "No PCA \u2014 learned projection Linear(768\u2192256\u2192128) is inside FusionNet",
+  "train_pre_norm": {
+    "n_samples": 1520,
+    "min": -1.7525203227996826,
+    "max": 1.508109450340271,
+    "mean": 0.001946247648447752,
+    "std": 0.08275596052408218,
+    "pct_negative": 48.77235814144737
+  },
+  "train_post_norm": {
+    "mean": -8.300208298450684e-10,
+    "std": 0.9999999403953552,
+    "min": -5.9010419845581055,
+    "max": 5.7773756980896
+  },
+  "val_post_norm": {
+    "n_samples": 295,
+    "mean": -0.0023406718391925097,
+    "std": 0.9895204901695251
+  },
+  "test_post_norm": {
+    "n_samples": 283,
+    "mean": -0.00025327439652755857,
+    "std": 0.9877126216888428
+  },
+  "class_separability": {
+    "l2_distance_feature_means": 13.487735748291016,
+    "benign_n": 1297,
+    "malignant_n": 223
+  },
+  "random_seed": 42
+}

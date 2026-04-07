@@ -1,0 +1,65 @@
+{
+  "clinical_model_path": "/kaggle/input/datasets/sadibhasan/clinical-bestmodel-xgboost/BEST_SET_A_model.joblib",
+  "best_model_name": "Gradient Boosting",
+  "inner_classifier": "GradientBoostingClassifier",
+  "calibration": "raw GBM score (uncalibrated)",
+  "use_raw_gbm_scores": true,
+  "threshold_image": 0.16000000000000003,
+  "threshold_patient": 0.14,
+  "feature_names": [
+    "age",
+    "gender",
+    "hand",
+    "ulna",
+    "radius",
+    "humerus",
+    "foot",
+    "femur",
+    "tibia",
+    "fibula",
+    "hip bone",
+    "ankle-joint",
+    "knee-joint",
+    "hip-joint",
+    "wrist-joint",
+    "elbow-joint",
+    "shoulder-joint",
+    "upper limb",
+    "lower limb",
+    "pelvis",
+    "frontal",
+    "lateral",
+    "oblique"
+  ],
+  "n_features": 23,
+  "splits": {
+    "train": {
+      "n_rois": 1520,
+      "n_unique_images": 1209,
+      "p_mean": 0.022237541154026985,
+      "p_std": 0.019458387047052383,
+      "p_min": 0.00020535443036351353,
+      "p_max": 0.0995059385895729,
+      "p_range": 0.09930058568716049
+    },
+    "val": {
+      "n_rois": 295,
+      "n_unique_images": 242,
+      "p_mean": 0.022275861352682114,
+      "p_std": 0.01981264166533947,
+      "p_min": 0.0008839248330332339,
+      "p_max": 0.0995059385895729,
+      "p_range": 0.09862201660871506
+    },
+    "test": {
+      "n_rois": 283,
+      "n_unique_images": 241,
+      "p_mean": 0.02260279655456543,
+      "p_std": 0.017641298472881317,
+      "p_min": 0.0008839248330332339,
+      "p_max": 0.09238111227750778,
+      "p_range": 0.09149719029664993
+    }
+  },
+  "note": "p_malignant computed at image level and broadcast to all ROIs of that source image. Clinical metadata is image/patient-level not ROI-level \u2014 broadcasting is correct."
+}

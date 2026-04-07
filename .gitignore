@@ -1,0 +1,30 @@
+# Model files
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.onnx
+
+# Data
+data/
+dataset/
+datasets/
+
+# Results / logs
+results/
+outputs/
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Large files
+*.zip
+*.tar
+*.gz

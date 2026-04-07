@@ -1,0 +1,4 @@
+Comparison,A_TP-FP-TN-FN,B_TP-FP-TN-FN,chi2,p_value,Note
+FusionNet (proposed) vs Image-Only MLP,26-11-189-15,25-13-187-16,,,different predictions (exact McNemar requires raw predictions)
+FusionNet (proposed) vs Clinical-Only MLP,26-11-189-15,20-91-109-21,,,different predictions (exact McNemar requires raw predictions)
+FusionNet (proposed) vs Clinical LR (Stage 2 baseline),26-11-189-15,0-0-200-41,,,different predictions (exact McNemar requires raw predictions)

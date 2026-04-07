@@ -1,0 +1,9 @@
+Comparison,Metric,Diff (A-B),CI95_low,CI95_high,p_value,Significance
+FusionNet vs Image-Only,auc_roc,-0.0083,-0.0809,0.0611,0.812,ns
+FusionNet vs Image-Only,auc_pr,0.0175,-0.1672,0.2096,0.8405,ns
+FusionNet vs Clinical-LR,auc_roc,0.3496,0.2181,0.469,0.0005,***
+FusionNet vs Clinical-LR,auc_pr,0.5549,0.3936,0.6755,0.0005,***
+FusionNet vs Clinical-Only,auc_roc,0.3191,0.1822,0.4465,0.0005,***
+FusionNet vs Clinical-Only,auc_pr,0.4869,0.313,0.6396,0.0005,***
+Image-Only vs Clinical-LR,auc_roc,0.3579,0.2287,0.4777,0.0005,***
+Image-Only vs Clinical-LR,auc_pr,0.5374,0.3708,0.6789,0.0005,***

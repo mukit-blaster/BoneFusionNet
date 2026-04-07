@@ -1,0 +1,52 @@
+{
+  "model": "Mask R-CNN R50-FPN",
+  "size_thresholds": {
+    "small": "< 1024 pixels\u00b2",
+    "medium": "1024 - 9216 pixels\u00b2",
+    "large": "> 9216 pixels\u00b2"
+  },
+  "detection_params": {
+    "score_threshold": 0.15,
+    "bbox_iou_threshold": 0.5,
+    "mask_iou_threshold": 0.5
+  },
+  "results_by_size": {
+    "small": {
+      "sensitivity": 0.14285714285714285,
+      "true_positives": 1,
+      "false_negatives": 6,
+      "total_tumors": 7,
+      "mean_mask_iou": 0.6563275434243176,
+      "median_mask_iou": 0.6563275434243176,
+      "std_mask_iou": 0.0,
+      "num_masks_evaluated": 1
+    },
+    "medium": {
+      "sensitivity": 0.57,
+      "true_positives": 57,
+      "false_negatives": 43,
+      "total_tumors": 100,
+      "mean_mask_iou": 0.7042989147794267,
+      "median_mask_iou": 0.7190615835777127,
+      "std_mask_iou": 0.1379868732074601,
+      "num_masks_evaluated": 57
+    },
+    "large": {
+      "sensitivity": 0.7159533073929961,
+      "true_positives": 184,
+      "false_negatives": 73,
+      "total_tumors": 257,
+      "mean_mask_iou": 0.7533183543610148,
+      "median_mask_iou": 0.7819562242895036,
+      "std_mask_iou": 0.12014538246141122,
+      "num_masks_evaluated": 184
+    }
+  },
+  "overall": {
+    "total_tumors": 364,
+    "total_detected": 242,
+    "total_missed": 122,
+    "overall_sensitivity": 0.6648351648351648,
+    "overall_mean_mask_iou": 0.7046482708549197
+  }
+}

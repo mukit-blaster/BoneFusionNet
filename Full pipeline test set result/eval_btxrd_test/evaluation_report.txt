@@ -1,0 +1,63 @@
+================================================================
+  BoneScan AI — BTXRD Test Split Evaluation
+  det_thr=0.15  cls_thr=0.5  agg=Any Malignant
+================================================================
+
+  GT Normal    : 278
+  GT Benign    : 239
+  GT Malignant : 47
+  Total        : 564
+
+────────────────────────────────────────────────────────────────
+  LEVEL A — Stage-1: Normal vs Tumor
+────────────────────────────────────────────────────────────────
+    Accuracy                     0.8333
+    Precision                    0.8038
+    Recall_Sensitivity           0.8881
+    Specificity                  0.7770
+    F1                           0.8439
+    AUC_ROC                      0.9061
+    AUC_PR                       0.9141
+    MCC                          0.6699
+    Kappa                        0.6661
+    TP/TN/FP/FN = 254/216/62/32
+
+────────────────────────────────────────────────────────────────
+  LEVEL B — Full Pipeline: Normal vs Abnormal
+────────────────────────────────────────────────────────────────
+    Accuracy                     0.8333
+    Precision                    0.8038
+    Recall_Sensitivity           0.8881
+    Specificity                  0.7770
+    F1                           0.8439
+    AUC_ROC                      0.8465
+    AUC_PR                       0.8026
+    MCC                          0.6699
+    Kappa                        0.6661
+    TP/TN/FP/FN = 254/216/62/32
+
+────────────────────────────────────────────────────────────────
+  LEVEL C — Stage-2: Benign vs Malignant (TP only)
+────────────────────────────────────────────────────────────────
+    Accuracy                     0.8780
+    Precision                    0.6222
+    Recall_Sensitivity           0.6667
+    Specificity                  0.9198
+    F1                           0.6437
+    AUC_ROC                      0.9285
+    AUC_PR                       0.7935
+    MCC                          0.5706
+    Kappa                        0.5701
+    TP/TN/FP/FN = 28/195/17/14
+
+────────────────────────────────────────────────────────────────
+  LEVEL E — 3-Class Confusion
+────────────────────────────────────────────────────────────────
+              Pred:Normal  Pred:Benign  Pred:Malignant
+GT:Normal             216           54               8
+GT:Benign              27          195              17
+GT:Malignant            5           14              28
+
+================================================================
+  Inference: 85.0s  (150.6 ms/img)
+================================================================

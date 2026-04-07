@@ -1,0 +1,33 @@
+{
+  "aug_condition": "no_aug",
+  "feature_source": "fusion_outputs/step3_norm/no_aug",
+  "input_dims": {
+    "img_feat": 768,
+    "clin_feat": 23,
+    "lr_prob": 1,
+    "total": 792
+  },
+  "splits": {
+    "train": {
+      "n_samples": 1520,
+      "n_benign": 1297,
+      "n_malignant": 223
+    },
+    "val": {
+      "n_samples": 295,
+      "n_benign": 249,
+      "n_malignant": 46
+    },
+    "test": {
+      "n_samples": 283,
+      "n_benign": 242,
+      "n_malignant": 41
+    }
+  },
+  "sampler": {
+    "type": "WeightedRandomSampler",
+    "malignant_weight": 2.0
+  },
+  "batch_size": 64,
+  "random_seed": 42
+}

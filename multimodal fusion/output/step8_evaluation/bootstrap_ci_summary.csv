@@ -1,0 +1,37 @@
+Model,Metric,Mean,CI95_Low,CI95_High,CI_Width
+FusionNet (proposed),auc_roc,0.9019,0.8511,0.9467,0.0956
+FusionNet (proposed),auc_pr,0.7559,0.6182,0.8533,0.235
+FusionNet (proposed),brier,0.0897,0.0607,0.118,0.0574
+FusionNet (proposed),balanced_accuracy,0.7885,0.7103,0.8585,0.1482
+FusionNet (proposed),macro_f1,0.799,0.7179,0.8678,0.1498
+FusionNet (proposed),mcc,0.6021,0.4438,0.7417,0.2979
+FusionNet (proposed),malignant_recall,0.6318,0.4762,0.7692,0.293
+FusionNet (proposed),malignant_precision,0.7041,0.5238,0.8947,0.3709
+FusionNet (proposed),specificity,0.9453,0.9123,0.9835,0.0712
+Image-Only MLP,auc_roc,0.9102,0.8615,0.9553,0.0938
+Image-Only MLP,auc_pr,0.7383,0.5838,0.8594,0.2757
+Image-Only MLP,brier,0.0903,0.0615,0.1182,0.0567
+Image-Only MLP,balanced_accuracy,0.7711,0.6935,0.8383,0.1448
+Image-Only MLP,macro_f1,0.7783,0.6981,0.8458,0.1477
+Image-Only MLP,mcc,0.56,0.4002,0.6952,0.2949
+Image-Only MLP,malignant_recall,0.6068,0.4583,0.7407,0.2824
+Image-Only MLP,malignant_precision,0.6595,0.4762,0.85,0.3738
+Image-Only MLP,specificity,0.9354,0.9,0.976,0.076
+Clinical-Only MLP,auc_roc,0.5827,0.4709,0.7107,0.2398
+Clinical-Only MLP,auc_pr,0.269,0.1582,0.3748,0.2166
+Clinical-Only MLP,brier,0.3253,0.3002,0.3492,0.049
+Clinical-Only MLP,balanced_accuracy,0.5179,0.4301,0.6153,0.1852
+Clinical-Only MLP,macro_f1,0.4609,0.4013,0.5191,0.1178
+Clinical-Only MLP,mcc,0.0261,-0.1051,0.164,0.269
+Clinical-Only MLP,malignant_recall,0.4907,0.3181,0.6842,0.3661
+Clinical-Only MLP,malignant_precision,0.1801,0.1053,0.2464,0.1411
+Clinical-Only MLP,specificity,0.5451,0.4603,0.626,0.1657
+Clinical LR (Stage 2 baseline),auc_roc,0.5523,0.444,0.6728,0.2288
+Clinical LR (Stage 2 baseline),auc_pr,0.2009,0.1348,0.2776,0.1428
+Clinical LR (Stage 2 baseline),brier,0.1623,0.1115,0.2092,0.0977
+Clinical LR (Stage 2 baseline),balanced_accuracy,0.5,0.5,0.5,0.0
+Clinical LR (Stage 2 baseline),macro_f1,0.4535,0.4385,0.4689,0.0303
+Clinical LR (Stage 2 baseline),mcc,,,,
+Clinical LR (Stage 2 baseline),malignant_recall,0.0,0.0,0.0,0.0
+Clinical LR (Stage 2 baseline),malignant_precision,0.0,0.0,0.0,0.0
+Clinical LR (Stage 2 baseline),specificity,1.0,1.0,1.0,0.0

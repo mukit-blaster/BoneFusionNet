@@ -1,0 +1,25 @@
+================================================================================
+TEST SET EVALUATION SUMMARY
+================================================================================
+
+Threshold: 0.4000
+Image Aggregation Method: max
+
+CONFUSION MATRIX:
+----------------------------------------
+True Negatives (TN):  220
+False Positives (FP): 58
+False Negatives (FN): 33
+True Positives (TP):  253
+
+IMAGE-LEVEL CLASSIFICATION METRICS:
+----------------------------------------
+Accuracy:     0.8387
+Precision:    0.8135
+Recall:       0.8846 (Sensitivity)
+Specificity:  0.7914
+F1-Score:     0.8476
+ROC AUC:      0.9240
+PR AUC:       0.9338
+
+================================================================================
